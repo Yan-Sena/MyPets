@@ -13,6 +13,7 @@
         android:src="#2c2c2c" />
 
     <EditText
+        android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira o usuário"
@@ -20,6 +21,7 @@
         android:maxLength="100" />
 
     <EditText
+        android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira sua senha"
@@ -27,16 +29,19 @@
         android:maxLength="50" />
 
     <Button
+        android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Entrar" />
 
     <Button
+        android:id="@+id/btnSair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sair" />
 
     <TextView
+        android:id="@+id/txtEsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Esqueceu sua senha!!!" />
