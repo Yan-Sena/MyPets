@@ -16,34 +16,36 @@
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira o usuário"
+        android:hint="@string/insira_o_usu_rio"
         android:inputType="textPersonName"
-        android:maxLength="100" />
+        android:maxLength="100"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira sua senha"
+        android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
-        android:maxLength="50" />
+        android:maxLength="50"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar" />
+        android:text="@string/entrar" />
 
     <Button
         android:id="@+id/btnSair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sair" />
+        android:text="@string/sair" />
 
     <TextView
         android:id="@+id/txtEsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esqueceu sua senha!!!" />
+        android:text="@string/esqueceu_sua_senha" />
 
 </LinearLayout>
