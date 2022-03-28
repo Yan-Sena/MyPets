@@ -16,19 +16,25 @@
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:drawableRight="@drawable/ic_baseline_email"
         android:hint="@string/insira_o_usu_rio"
         android:inputType="textPersonName"
         android:maxLength="100"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:padding="5dp" />
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/borda"
+        android:drawableRight="@drawable/ic_baseline_lock"
         android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
         android:maxLength="50"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:padding="5dp" />
 
     <Button
         android:id="@+id/btnEntrar"
