@@ -4,17 +4,41 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    //Declarar os componentes que serão utilizados no java
+    //Variáveis globais
+    EditText edtUsuario, edtSenha;
+    Button btnEntrar, btnSair;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
+
+        //Declarando os componentes do xml para o java
+        edtUsuario = findViewById(R.id.edtUsuario);
+        edtSenha = findViewById(R.id.edtSenha);
+        btnEntrar = findViewById(R.id.btnEntrar);
+        btnSair = findViewById(R.id.btnSair);
+
+        //Eventos de clique nos botões
+
+        btnSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
 
-    public void acessarSistema(View view) {
-        Toast.makeText(getApplicationContext(),"Bem vindo ao sistema",Toast.LENGTH_LONG).show();
+
+    public void acessarJanela(View view) {
+
+
     }
 }

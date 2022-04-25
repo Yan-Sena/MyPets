@@ -75,7 +75,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:onClick="acessarSistema"
+       android:onClick="acessarJanela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Acessar"
