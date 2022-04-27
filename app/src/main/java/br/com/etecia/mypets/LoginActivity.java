@@ -2,6 +2,7 @@ package br.com.etecia.mypets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,28 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //Implementando o botão entrar
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String nome = edtUsuario.getText().toString();
+                String email = edtSenha.getText().toString();
+
+               if (nome.equals("etecia") && email.equals("etecia")){
+
+                   //abrindo outra janela
+                   startActivity(new Intent(getApplicationContext(),MainActivity.class));
+               }
+               else {
+                     Toast.makeText(getApplicationContext(),
+                        "Usuário ou senha inválidos!!!",
+                        Toast.LENGTH_SHORT).show();
+               }
+            }
+        });
+
 
     }
 
