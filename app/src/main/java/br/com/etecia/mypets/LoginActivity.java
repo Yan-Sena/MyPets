@@ -43,20 +43,28 @@ public class LoginActivity extends AppCompatActivity {
                 String nome = edtUsuario.getText().toString();
                 String email = edtSenha.getText().toString();
 
-               if (nome.equals("etecia") && email.equals("etecia")){
+                if (nome.equals("etecia") && email.equals("etecia")) {
 
-                   //abrindo outra janela
-                   startActivity(new Intent(getApplicationContext(),MainActivity.class));
-               }
-               else {
-                     Toast.makeText(getApplicationContext(),
-                        "Usuário ou senha inválidos!!!",
-                        Toast.LENGTH_SHORT).show();
-               }
+                    //abrindo outra janela
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            "Usuário ou senha inválidos!!!",
+                            Toast.LENGTH_SHORT).show();
+                    //chamando o método limpar tela
+                    limparTela();
+                }
             }
         });
 
+    }
 
+    //criando o método para limpar a tela
+    public void limparTela() {
+        edtUsuario.setText("");
+        edtSenha.setText("");
+        edtUsuario.requestFocus();
     }
 
 
